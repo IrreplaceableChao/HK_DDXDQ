@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hekang">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name="com.hekang.hkcxn.util.CrashApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo2"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+        <activity
+            android:name="com.hekang.hkcxn.activity.TimeData"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hekang.hkcxn.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <!-- 蓝牙适配 -->
+        <activity
+            android:name="com.hekang.hkcxn.activity.DuankouxuanzeActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.activity.CexieCeshiActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".hkcxn.activity.TanGuanShezhiActivity"
+            android:label="@string/title_activity_zifu_shezhi"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+        <activity
+            android:name="org.achartengine.GraphicalActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.activity.MyBaseActivity"
+            android:label="@string/title_activity_my_base"></activity>
+
+        <!-- 探管设置 -->
+        <!-- 同步启动 -->
+        <activity
+            android:name=".hkcxn.activity.SynchronousStartActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".hkcxn.fragmentActivity.EfficientPoint"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+
+        </activity>
+        <!-- 接收数据 -->
+        <activity
+            android:name=".hkcxn.activity.DataReceiveActivity"
+            android:screenOrientation="portrait"></activity>
+        <!-- 数据查询 -->
+        <activity
+            android:name=".hkcxn.activity.QueryDataActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".hkcxn.activity.DataQueryListActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.hekang.hkcxn.multi.helpcexieyi"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.multi.helpchangjianwenti"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.multi.helplianxiwomen"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.multi.helpxuandianqi"
+            android:screenOrientation="portrait"></activity>
+        <!-- 软件帮助模块 -->
+        <activity
+            android:name="com.hekang.hkcxn.help.SoftwareHelp"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.help.SoftwareHelpScroll"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.help.SoftwareHelpScroll_2"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.help.SoftwareHelpScroll_3"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.help.SoftwareHelpScroll_4"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.hekang.hkcxn.help.SoftwareHelpCXY"
+            android:screenOrientation="portrait"></activity>
+
+        <service android:name=".hkcxn.BLE.BleService" />
+        <service android:name=".hkcxn.BLE.MultipleBleService" />
+    </application>
+
+</manifest>

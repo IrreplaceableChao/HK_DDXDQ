@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    <include 
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        layout="@layout/title"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonsize"
+        android:layout_below="@+id/title"
+        android:background="#6DC8F3" >
+
+
+
+        <Button
+            android:id="@+id/shangyibu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mybutton"
+            android:text="重新设置"
+            android:textSize="@dimen/buttontextsize" />
+
+        <Button
+            android:id="@+id/fanhuizhuye"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/shangyibu"
+            android:background="@drawable/mybutton"
+            android:text="返回主页"
+            android:textSize="@dimen/buttontextsize" />
+
+                <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="55dp"
+            android:text="当前界面"
+            android:textColor="#ffff00" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView01"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_toLeftOf="@+id/textView1"
+            android:text="自浮测斜"
+            android:textColor="#404040"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/TextView02"
+            android:text="-仪器工作"
+            android:textColor="#404040" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/bottomheight"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/topline"
+        android:background="#DBDFE3"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" 
+            android:layout_weight="2"
+            android:layout_gravity="center|center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/imagezuo"
+                            android:layout_width="300dip"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="#ffffff" />
+
+                        <Button
+                            android:id="@+id/next"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="13dp"
+                            android:layout_toRightOf="@+id/imagezuo"
+                            android:background="@drawable/mybutton"
+                            android:gravity="center"
+                            android:text="准备                同步启动探管"
+                            android:textSize="45sp" />
+
+
+
+        </RelativeLayout>
+
+<!--         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            
+            android:layout_gravity="center|center_vertical">
+
+
+
+        </LinearLayout> -->
+
+
+    </LinearLayout>
+
+</RelativeLayout>

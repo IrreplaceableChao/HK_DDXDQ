@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    	<include 
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        layout="@layout/title"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout 
+	    android:id="@+id/topline"
+	    android:layout_below="@+id/title"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/buttonsize"
+	    android:orientation="horizontal"
+	    >
+	    <Button 
+	        android:id="@+id/xuanzhongall"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:text="选中全部数据"
+	        android:textSize="@dimen/buttontextsize"
+	        android:background="@drawable/mybutton"
+	        
+	        />
+	    
+	    <Button
+	        android:id="@+id/daochu"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:text="导出选中数据"
+	        android:textSize="@dimen/buttontextsize" 
+	        android:background="@drawable/mybutton"
+	        android:enabled="false"
+	        />
+	    
+	    <Button
+	        android:id="@+id/dayin"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:text="打印选中数据"
+	        android:textSize="@dimen/buttontextsize"
+	        android:background="@drawable/mybutton"
+	        android:enabled="false"
+	         />
+	    
+	    <Button
+	        android:id="@+id/delete"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:text="删除选中数据"
+	        android:textSize="@dimen/buttontextsize" 
+	        android:background="@drawable/mybutton"
+	        android:enabled="false"
+	        />
+	    
+
+	    
+	    <Button
+	        android:id="@+id/fanhuichaxun"
+	        android:layout_width="0dip"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:text="返回查询"
+	        android:textSize="@dimen/buttontextsize" 
+	        android:background="@drawable/mybutton"
+	        />
+
+	</LinearLayout>
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ccc"
+        android:minHeight="25dip"
+        android:orientation="horizontal" >
+
+         
+<!--              <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+ 
+            android:textColor="#850"
+            android:gravity="center"
+            android:text="选中" />
+        -->
+
+        <com.hekang.hkcxn.util.CHScrollView
+            android:id="@+id/item_scroll_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+                
+                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+
+                <TextView
+                    android:layout_width="30dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="选中"
+                    android:textColor="#850" />
+                
+                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+
+                <TextView
+                    android:layout_width="50dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="序号"
+                    android:textColor="#850" />
+                
+                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+
+                <TextView
+                    android:layout_width="65dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="源数据"
+                    android:textColor="#850" />
+                
+                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="队号"
+                    android:textColor="#850" />
+                
+                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="井号"
+                    android:textColor="#850" />
+                
+                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="测量日期"
+                    android:textColor="#850" />
+                
+                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="测深"
+                    android:textColor="#850" />
+                
+                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+
+                <TextView
+                    android:layout_width="70dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="井斜"
+                    android:textColor="#850" />
+                
+                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+                                <TextView
+                    android:layout_width="70dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="磁方位"
+                    android:textColor="#850" />
+                                                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+                                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="重力高边"
+                    android:textColor="#850" />
+                                                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+                                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="磁工具面"
+                    android:textColor="#850" />
+                                                                                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+                                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="校验和"
+                    android:textColor="#850" />
+                                                                                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+                                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="磁场强度"
+                    android:textColor="#850" />
+                                                                                                                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+                                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="磁倾角"
+                    android:textColor="#850" />
+                                                                                                                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+                                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="温度"
+                    android:textColor="#850" />
+                                                                                                                <ImageView android:layout_width="1px" android:layout_height="fill_parent" android:background="#7B858E"/>
+                                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="电压"
+                    android:textColor="#850" />
+            </LinearLayout>
+            
+        </com.hekang.hkcxn.util.CHScrollView>
+    </LinearLayout> 
+<com.hekang.hkcxn.util.CHScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+    
+    <ListView
+        android:id="@+id/scroll_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#7B858E"
+        android:dividerHeight="1px"  
+        android:fadingEdge="none"
+        android:scrollbars="none" 
+        android:listSelector="#00000000"
+        android:fastScrollEnabled="true" >
+    </ListView>
+ </com.hekang.hkcxn.util.CHScrollView>
+  	<RelativeLayout
+ 	    android:id="@+id/main"
+ 	    android:layout_width="wrap_content"
+ 	    android:layout_height="wrap_content"
+>
+         		<include
+	    android:id="@+id/bottom"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/bottomheight"
+	    layout="@layout/bottom" />	
+   </RelativeLayout>
+
+</LinearLayout>

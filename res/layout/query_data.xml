@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="match_parent">
+    <include layout="@layout/title"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radiops"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radioquan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:checked="true"
+                android:text="全部数据"
+                android:textSize="20dp"
+                 />
+            
+             <RadioButton
+                android:id="@+id/radiojing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:text="按照井号查询"
+                 android:textSize="20dp"
+                 />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/kongquery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" >
+
+            <Spinner
+		        android:id="@+id/Spinner"
+		        android:layout_width="250dp"
+		        android:layout_height="35dp"
+		        android:background="@drawable/chaxunjinghao"
+		        android:layout_gravity="center_horizontal"
+		        android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/widget28"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextView_Show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="70dp"
+            android:text="按时间查询："
+            android:textSize="20dp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/starttime"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:ems="10" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="到"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/endtime"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:ems="10" >
+            </EditText>
+
+            <CheckBox
+                android:id="@+id/checkshjian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#0000C0"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+<TextView 
+     android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+                android:visibility="gone"
+        android:textColor="#FF0000"
+        android:text="注意：开始时间不得大于结束时间！"
+    
+    />
+    <LinearLayout
+        android:id="@+id/linearlayoutbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" > >
+
+        <Button
+            android:id="@+id/chaxun"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:textColor="#000000"
+            android:textSize="25dp"
+            android:text="数据查询"
+             />
+
+        <Button
+            android:id="@+id/fanhuizhuye"
+             android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+              android:textColor="#000000"
+            android:textSize="25dp"
+            android:text="返回主页"
+            />
+    </LinearLayout>
+
+</LinearLayout>

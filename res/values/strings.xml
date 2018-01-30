@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">多点选点器</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_dingdianceliang">DingdianceliangActivity</string>
+    <string name="title_activity_shujujieshou">ShujujieshouActivity</string>
+    <string name="title_activity_shujuchaxun">ShujuchaxunActivity</string>
+    <string name="title_activity_duankouxuanze">DuankouxuanzeActivity</string>
+    <string name="title_activity_tanguanjiance">TanguanjianceActivity</string>
+    <string name="title_activity_cexie_ceshi">CexieCeshiActivity</string>
+    <string name="title_activity_zifu_shezhi">ZifuShezhiActivity</string>
+    <string name="title_activity_step1">Step1Activity</string>
+    <string name="title_activity_step2">Step2Activity</string>
+    <string name="title_activity_step3">Step3Activity</string>
+    <string name="scanning">scanning for devices...</string>
+    <string name="none_found">No devices found</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="title_activity_rengong_pandu">RengongPanduActivity</string>
+    <string name="title_activity_test_activity">TestActivityActivity</string>
+    <string name="title_activity_cicha_line">CichaLineActivity</string>
+    <string name="title_activity_print">PrintActivity</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="tongxunshibai">　　通讯失败，请检查。\n1. 对于HK51-01S探管，先与电池筒连接，再插上适配器。\n2.对于HK51-01FM/EM探管，先与电池筒连接，再插上适配器，然后打开探管电源，此时探管指示灯红灯常亮。\n　详见【软件帮助】-【问题解答】。</string>
+    <string name="tongxunshibai51F">　　通讯失败，请确认探管是否处于待机状态：\n先与电池筒连接，再插上适配器，然后打开探管电源，此时探管指示灯红灯常亮。\n　　详见【软件帮助】-【问题解答】。</string>
+    <string name="tongxunshibai51S">　　通讯失败，请将电池筒卸下重新与探管进行连接，再插上适配器。\n　　详见【软件帮助】-【问题解答】。</string>
+    <string name="tongxunshibai68A">　　通讯失败，请将电池筒卸下重新与探管进行连接。\n　　详见【软件帮助】-【问题解答】。</string>
+
+    <string name="tgsz_68A">1.确认相关参数已正确输入。\n2.点击【确定】后将清除探管中保存的测量数据。\n3.将探管装入外保护总成中，可随时准备下井进行测量。</string>
+    <string name="tgsz_51S">1.确认相关参数已正确输入。\n2.点击【确定】后将清除探管中保存的测量数据。\n3.拔下探管蓝牙适配器，将探管装入外保护总成中，可随时准备下井进行测量。</string>
+    <string name="tgsz_51F">1.确认相关参数已正确输入。\n2.点击【确定】后将清除探管中保存的测量数据。</string>
+
+    <string name="qryqdd">请确认仪器已到底。</string>
+ 	<string name="celiangfangshi">测深输入</string>
+
+
+
+
+ 	<string name="titleNUM">多点选点器软件V12.0</string>
+ 	<string name="HelpTitleNUM">多点选点器软件V12.0</string>
+
+    <integer name="sendMessageDelayMillis">150</integer>
+    <string-array name="province_item">
+        <item>48</item>
+        <item>38</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="g51waijingitem">
+        <item>48</item>
+    </string-array>
+    <string-array name="beijin_province_item">
+        <item>75</item>
+        <item>95</item>
+        <item>105</item>
+    </string-array>
+    <string-array name="tianjin_province_item">
+        <item>70</item>
+    </string-array>
+    <string-array name="heibei_province_item">
+        <item>45</item>
+    </string-array>
+
+    <!-- 2000多个县 -->
+    <string-array name="beijin_city_item">
+        <item>125</item>
+    </string-array>
+    <string-array name="beijin_city_item2">
+        <item>125</item>
+    </string-array>
+    <string-array name="beijin_city_item3">
+        <item>125</item>
+    </string-array>
+    <string-array name="tianjin_city_item">
+        <item>125</item>
+    </string-array>
+    <string-array name="shijiazhuang_city_item">
+        <item>125</item>
+    </string-array>
+    <string-array name="gmaxwendu75">
+        <item>260</item>
+    </string-array>
+    <string-array name="gmaxwendu95">
+        <item>260</item>
+    </string-array>
+    <string-array name="gmaxwendu105">
+        <item>260</item>
+    </string-array>
+
+    <string name="title_activity_pull_excel">PullExcelActivity</string>
+    <string name="title_activity_touce_shezhi">TouceShezhiActivity</string>
+
+    <string-array name="zongchengwaijing">
+        <item>35</item>
+        <item>45</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="zongchengchengya35">
+        <item>80</item>
+        <item>120</item>
+    </string-array>
+    <string-array name="zongchengchengya45">
+        <item>80</item>
+        <item>120</item>
+    </string-array>
+    <string-array name="zongchengchengya50">
+        <item>150</item>
+        <item>180</item>
+    </string-array>
+    <string-array name="zuigaowenduitem1">
+        <item>125</item>
+    </string-array>
+    <string-array name="zuigaowenduitem2">
+        <item>260</item>
+    </string-array>
+    <string-array name="zuigaowenduitem3">
+        <item>125</item>
+        <item>260</item>
+    </string-array>
+
+    <string name="title_activity_step3_tc">Step3TCActivity</string>
+    <string name="title_activity_dcshezhi">DCShezhiActivity</string>
+    <string name="title_activity_dcstep">DCStepActivity</string>
+    <string name="title_activity_gaobian_x">GaobianXActivity</string>
+    <string name="title_activity_dxshezhi">DXShezhiActivity</string>
+    <string name="title_activity_dingdian_help">DingdianHelpActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_my_base">MyBaseActivity</string>
+    <string name="todo">TODO</string>
+
+</resources>

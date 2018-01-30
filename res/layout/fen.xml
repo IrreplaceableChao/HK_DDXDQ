@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lfen"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal">
+
+
+        <CheckBox
+            android:id="@+id/CheckBox"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:textColor="#011" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#7B858E" />
+
+        <TextView
+            android:id="@+id/item_datav4"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#011"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#7B858E" />
+        <TextView
+            android:id="@+id/item_datav1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#011"
+            android:text="1234567890"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#7B858E" />
+
+        <TextView
+            android:id="@+id/item_datav2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#011"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#7B858E" />
+
+        <TextView
+            android:id="@+id/item_datav3"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#011"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:background="#7B858E" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

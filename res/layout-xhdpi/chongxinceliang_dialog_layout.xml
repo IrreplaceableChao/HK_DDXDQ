@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <LinearLayout
+        android:layout_width="397dp"
+        android:layout_height="259dp"
+        android:layout_gravity="center"
+        android:background="#DBDFE3"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_18_ffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbar"
+            android:gravity="center"
+            android:text="提示"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/chongxinshezhi"
+                android:layout_width="170dip"
+                android:layout_height="80dip"
+                android:layout_alignBaseline="@+id/chongxintongbu"
+                android:layout_alignBottom="@+id/chongxintongbu"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/mybutton"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="重新设置" />
+
+            <Button
+                android:id="@+id/chongxintongbu"
+                android:layout_width="170dip"
+                android:layout_height="80dip"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/mybutton"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="重新同步启动" />
+
+            <Button
+                android:id="@+id/chongxinceliang"
+                android:layout_width="170dip"
+                android:layout_height="80dip"
+                android:layout_alignLeft="@+id/chongxinshezhi"
+                android:layout_below="@+id/chongxinshezhi"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/mybutton"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="重新测量" />
+
+            <Button
+                android:id="@+id/quxiao"
+                android:layout_width="170dip"
+                android:layout_height="80dip"
+                android:layout_alignBaseline="@+id/chongxinceliang"
+                android:layout_alignBottom="@+id/chongxinceliang"
+                android:layout_alignLeft="@+id/chongxintongbu"
+                android:background="@drawable/mybutton"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="取消" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

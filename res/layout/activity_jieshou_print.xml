@@ -1,0 +1,220 @@
+<com.hekang.hkcxn.util.KeyboardListenRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/printroot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff">
+    
+        <include 
+        android:id="@+id/title"
+        android:layout_height="@dimen/titleheight"
+        android:layout_width="fill_parent"
+        layout="@layout/title"
+        android:layout_alignParentTop="true"/>
+
+	<RelativeLayout  
+	    android:id="@+id/topline"
+	    android:layout_below="@+id/title"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/buttonsize"
+	    android:background="#6DC8F3"
+	    android:orientation="horizontal"
+	    >
+<!-- 	    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="55dp"
+            android:text="当前界面"
+            android:textColor="#ffff00" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView01"
+            android:layout_alignBottom="@+id/TextView01"
+            android:layout_toLeftOf="@+id/textView1"
+            android:text=""
+            android:textColor="#404040"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/TextView02"
+            android:text="数据打印"
+            android:textColor="#404040" /> -->
+
+        <Button
+            android:id="@+id/printnow"
+            android:layout_width="112dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mybutton"
+            android:text="打印当前页"
+            android:textSize="@dimen/buttontextsize" />
+
+        <Button
+            android:id="@+id/printall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/printnow"
+            android:background="@drawable/mybutton"
+            android:text="打印全部"
+            android:textSize="@dimen/buttontextsize" />
+
+        <Button
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/printall"
+            android:background="@drawable/mybutton"
+            android:text="上一条"
+            android:textSize="@dimen/buttontextsize" />
+
+        <Button
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/up"
+            android:background="@drawable/mybutton"
+            android:text="下一条"
+            android:textSize="@dimen/buttontextsize" />
+
+        <Button
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/down"
+            android:background="@drawable/mybutton"
+            android:text="第一条"
+            android:textSize="@dimen/buttontextsize" />
+
+        <Button
+            android:id="@+id/fanhui"
+            android:layout_width="112dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/first"
+            android:background="@drawable/mybutton"
+            android:text="返回"
+            android:textSize="@dimen/buttontextsize" />
+
+	</RelativeLayout>
+	
+	<include
+	    android:id="@+id/bottom"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/bottomheight"
+	    android:layout_alignParentBottom="true" 
+	    layout="@layout/bottom" />
+	
+		<RelativeLayout 
+		    android:id="@+id/main"
+		    android:layout_below="@+id/topline"
+		    android:layout_above="@+id/bottom"
+		    android:layout_width="match_parent"
+		    android:layout_height="40dip"
+		    android:background="#DBDFE3"
+	    >
+
+		      <TextView
+		          android:id="@+id/printinfo"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content"
+		          android:layout_alignParentBottom="true"
+		          android:layout_below="@+id/textView1"
+		          android:layout_marginLeft="50dip"
+		          android:layout_marginRight="50dip"
+		          android:layout_marginTop="10dp"
+		          android:layout_marginBottom="20dip"
+		          android:background="@drawable/textbackground"
+		          android:scrollbars="vertical"
+		          android:singleLine="false"
+		          android:textColor="#000000" 
+		          android:textSize="25sp" 
+		          />
+
+		      <EditText
+		          android:id="@+id/number"
+		          android:layout_width="@dimen/textviewwidth"
+		          android:layout_height="30dip"
+		          android:layout_alignParentTop="true"
+		          android:layout_alignRight="@+id/printinfo"
+		          android:layout_marginTop="17dp"
+		          android:background="@drawable/textbackground"
+		          android:textSize="20sp"
+		          android:inputType="numberDecimal"
+		          android:text="1"
+		          android:textColor="#000000"/>
+
+		      <TextView
+		          android:id="@+id/textView1"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_alignBottom="@+id/number"
+		          android:layout_marginRight="19dp"
+		          android:layout_toLeftOf="@+id/number"
+		          android:text="打印份数"
+		          android:textColor="@android:color/black"
+		          android:textSize="25sp" />
+
+		      <TextView
+		          android:id="@+id/TextView03"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_alignBaseline="@+id/number"
+		          android:layout_alignBottom="@+id/number"
+		          android:layout_alignLeft="@+id/printinfo"
+		          android:text="No"
+		          android:textColor="#0000ff"
+		          android:textSize="25sp" />
+
+		      <TextView
+		          android:id="@+id/nowpage"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_alignBaseline="@+id/TextView03"
+		          android:layout_alignBottom="@+id/TextView03"
+		          android:layout_marginLeft="13dp"
+		          android:layout_toRightOf="@+id/TextView03"
+		          android:text="1"
+		          android:textColor="#000000"
+		          android:textSize="25sp" />
+
+		      <TextView
+		          android:id="@+id/TextView05"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_alignBaseline="@+id/nowpage"
+		          android:layout_alignBottom="@+id/nowpage"
+		          android:layout_toRightOf="@+id/nowpage"
+		          android:text="/"
+		          android:textColor="#000000"
+		          android:textSize="25sp" />
+
+		      <TextView
+		          android:id="@+id/allpage"
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:layout_alignBaseline="@+id/TextView05"
+		          android:layout_alignBottom="@+id/TextView05"
+		          android:layout_toRightOf="@+id/TextView05"
+		          android:text="2"
+		          android:textColor="#000000"
+		          android:textSize="25sp" />
+ 
+		</RelativeLayout>
+
+</com.hekang.hkcxn.util.KeyboardListenRelativeLayout>

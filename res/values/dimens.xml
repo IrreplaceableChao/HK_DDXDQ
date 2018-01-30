@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 探管设置参数 输入框范围提示     右边距 -->
+    <dimen name="righttishi">140dp</dimen>
+
+    <dimen name="buttontextsize">30px</dimen>
+    <dimen name="buttonsize">57dip</dimen>
+    <dimen name="bottomheight">30dip</dimen>
+    <dimen name="edittextheight">30dip</dimen>
+    <dimen name="grouptextsize">21sp</dimen>
+    <dimen name="grouptextmargintop">3.75dip</dimen>
+    <dimen name="grouptextmarginleft">268dip</dimen>
+    <dimen name="grouptextmarginleft2">128dip</dimen>
+    <dimen name="textviewwidth">111.2dip</dimen>
+    <dimen name="textviewheight">30.75dip</dimen>
+    <dimen name="textmargintop">60dp</dimen>
+    <dimen name="commontext">20.5sp</dimen>
+    <!-- 数据测量 -->
+    <dimen name="cichangqiangdumarginleft">41.6dp</dimen>
+    <dimen name="shujuceliangwidth">519.2dip</dimen>
+    <dimen name="shujuceliangmarginleft">54.4dip</dimen>
+    <dimen name="jieshoushujuedittextmarginleft">52.5dip</dimen>
+    <!-- 数据测量 -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+	    <!-- title -->
+<dimen name = "titleheight">48dip</dimen>
+<dimen name = "titlesize">26sp</dimen>
+<dimen name = "jieshoushuju">120dp</dimen>
+	<!-- 探管检测 -->
+	<dimen name = "yiqizitaiweight">350dp</dimen>
+	<dimen name = "yiqizitaiheight">180dip</dimen>
+	<dimen name = "tongxunzhuangtaiheight">130dp</dimen>
+	<dimen name = "shangcigongzuoqingkuangheight">60dp</dimen>
+	<dimen name = "jiancetextmargintop">15dp</dimen>
+	<dimen name = "jiancezuoshangheight">150px</dimen>
+	<dimen name = "jiancezuoshangwidth">248px</dimen>
+	<dimen name = "jiancezuoshangmarginleft">43dip</dimen>
+	<!-- activity_cexie_ceshi.xml -->
+	<dimen name = "imageview_width">400dip</dimen>
+	<dimen name = "cexieceshi_textview_margin">26dp</dimen>
+	<dimen name = "cexieceshi_textview2_margintop">30dp</dimen>
+
+	<dimen name = "zifushezhi_margintop">5dp</dimen>
+	<dimen name = "zifushezhi_margintopbig">12dp</dimen>
+	<dimen name = "zifushezhi_margintopbig2">40dp</dimen>
+	<!-- bottom -->
+	<dimen name="bottomweiht">800px</dimen>
+
+</resources>

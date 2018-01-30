@@ -1,0 +1,48 @@
+<resources>
+<dimen name="buttontextsize">15sp</dimen>
+<dimen name="buttonsize">40dip</dimen>
+<dimen name="edittextheight">30dip</dimen>
+<dimen name="grouptextsize">14sp</dimen>
+<dimen name="grouptextmargintop">3.75dip</dimen>
+<dimen name="grouptextmarginleft">268dip</dimen>
+<dimen name="grouptextmarginleft2">128dip</dimen>
+<dimen name="textviewwidth">70dip</dimen>
+<dimen name="textviewheight">20.75dip</dimen>
+<dimen name="textmargintop">35dp</dimen>
+<dimen name="commontext">12sp</dimen>
+<!-- 数据测量  -->
+<dimen name="cichangqiangdumarginleft">20.6dp</dimen>
+<dimen name="shujuceliangwidth">320dip</dimen>
+<dimen name="shujuceliangmarginleft">10dip</dimen>
+<dimen name="jieshoushujuedittextmarginleft">52.5dip</dimen>
+<!-- 数据测量  -->
+
+<dimen name="f2height">50dp</dimen>
+<dimen name="cexieheight">40dp</dimen>
+<dimen name="F1_linearheight">55dp</dimen>
+
+<!-- mainactivity -->
+<dimen name = "bottomheight">20dip</dimen>
+<dimen name = "bottomtextsize">18px</dimen>
+<!-- title -->
+<dimen name = "titleheight">45dip</dimen>
+<dimen name = "titlesize">20sp</dimen>
+<!-- 探管检测 -->
+<dimen name = "yiqizitaiweight">350dp</dimen>
+<dimen name = "yiqizitaiheight">180dip</dimen>
+<dimen name = "tongxunzhuangtaiheight">130dp</dimen>
+<dimen name = "shangcigongzuoqingkuangheight">60dp</dimen>
+<dimen name = "jiancetextmargintop">15dp</dimen>
+<dimen name = "jiancezuoshangheight">150px</dimen>
+<dimen name = "jiancezuoshangwidth">248px</dimen>
+<dimen name = "jiancezuoshangmarginleft">43dip</dimen>
+<!-- activity_cexie_ceshi.xml -->
+<dimen name = "imageview_width">400dip</dimen>
+<dimen name = "cexieceshi_textview_margin">26dp</dimen>
+<dimen name = "cexieceshi_textview2_margintop">30dp</dimen>
+<dimen name = "zifushezhi_margintop">5dp</dimen>
+<dimen name = "zifushezhi_margintopbig">12dp</dimen>
+<dimen name = "zifushezhi_margintopbig2">40dp</dimen>
+<!-- bottom -->
+<dimen name="bottomweiht">800px</dimen>
+</resources>

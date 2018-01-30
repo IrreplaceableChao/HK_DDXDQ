@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\ASworkspace\HK_DDXDQ\assets"><file name="a.swf" path="E:\ASworkspace\HK_DDXDQ\assets\a.swf"/><file name="go_market.html" path="E:\ASworkspace\HK_DDXDQ\assets\go_market.html"/></source><source path="E:\ASworkspace\HK_DDXDQ\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\ASworkspace\HK_DDXDQ\build-types\debug\assets"/></dataSet></merger>

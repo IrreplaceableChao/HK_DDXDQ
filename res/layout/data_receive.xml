@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <include
+        android:id="@id/include"
+        layout="@layout/title" >
+    </include>
+
+    <ProgressBar
+        android:id="@+id/pb_data_receive"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/include"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:max="100"
+        />
+
+    <HorizontalScrollView
+        android:id="@+id/hs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearlayoutbutton"
+        android:layout_below="@id/pb_data_receive"
+        android:orientation="horizontal"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/text_1"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="序号"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                         />
+                    <TextView
+                        android:id="@+id/text_0"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="注意"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        />
+                   
+                    <TextView
+                         android:id="@+id/text_3"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="测量深度,m"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/text_4"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="井斜,°"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                         />
+
+                    <TextView
+                         android:id="@+id/text_5"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="磁方位,°"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                         />
+
+                    <TextView
+                         android:id="@+id/text_6"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="校验和"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                         android:id="@+id/text_7"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="磁场强度,μT"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                         android:id="@+id/text_8"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="磁倾角,°"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/text_9"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="温度,°C"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_10"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="电压,V"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_11"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="重力高边,°"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_12"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="磁工具面,°"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/text_13"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="@string/celiangfangshi"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                     <TextView
+                         android:id="@+id/text_2"
+                        android:layout_width="@dimen/jieshoushuju"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_top_third"
+                        android:gravity="center"
+                        android:text="选点时间"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                         />
+                    
+                </TableRow>
+            </TableLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TableLayout
+                        android:id="@+id/tl_receive_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:orientation="vertical"
+                        android:stretchColumns="*" >
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+         android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/bt_jieshoushuju"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="数据接收"
+            android:visibility="gone"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:text="返回主页"
+            android:textColor="#000000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</RelativeLayout>

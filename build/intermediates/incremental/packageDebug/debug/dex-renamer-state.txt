@@ -1,0 +1,4 @@
+#Tue Jan 30 12:10:23 CST 2018
+base.0=E\:\\ASworkspace\\HK_DDXDQ\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

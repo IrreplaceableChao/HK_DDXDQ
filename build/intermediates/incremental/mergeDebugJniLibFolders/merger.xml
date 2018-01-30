@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\ASworkspace\HK_DDXDQ\libs"><file name="achartengine-1.1.0.jar" path="E:\ASworkspace\HK_DDXDQ\libs\achartengine-1.1.0.jar"/><file name="jxl.jar" path="E:\ASworkspace\HK_DDXDQ\libs\jxl.jar"/><file name="zip.jar" path="E:\ASworkspace\HK_DDXDQ\libs\zip.jar"/></source></dataSet><dataSet config="debug"><source path="E:\ASworkspace\HK_DDXDQ\build-types\debug\jniLibs"/></dataSet></merger>

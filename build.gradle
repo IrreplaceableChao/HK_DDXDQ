@@ -1,0 +1,66 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+    }
+}
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile files('libs/jxl.jar')
+    compile 'com.android.support:support-v4:27.0.2'
+    provided files(getLayoutLibPath())
+}
+
+def getLayoutLibPath(){
+    return"${android.getSdkDirectory().getAbsolutePath()}"+"/platforms/android-22/data/layoutlib.jar"
+}
+android {
+    compileSdkVersion 26  //编译的SDK版本
+    buildToolsVersion "26.0.2"//编译的Tools版本
+    defaultConfig { //默认配置
+        applicationId "hk.ble.com.blescan"//应用程序包名
+        minSdkVersion 18//支持的最低版本
+        targetSdkVersion 26//支持的目标版本
+        versionCode 14//版本号
+        versionName "12.0"//版本名
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets { //目录指向配置
+        main {
+            manifest.srcFile 'AndroidManifest.xml'//指定AndroidManifest文件
+            java.srcDirs = ['src']//指定source目录
+            resources.srcDirs = ['src']//指定source目录
+            aidl.srcDirs = ['src']//指定source目录
+            renderscript.srcDirs = ['src']//指定source目录
+            res.srcDirs = ['res']//指定资源目录
+            assets.srcDirs = ['assets']//指定assets目录
+            jniLibs.srcDirs = ['libs']//指定lib库目录
+        }
+
+        // Move the tests to tests/java, tests/res, etc...
+        instrumentTest.setRoot('tests')
+
+        // Move the build types to build-types/<type>
+        // For instance, build-types/debug/java, build-types/debug/AndroidManifest.xml, ...
+        // This moves them out of them default location under src/<type>/... which would
+        // conflict with src/ being used by the main source set.
+        // Adding new build types or product flavors should be accompanied
+        // by a similar customization.
+        debug.setRoot('build-types/debug')//指定debug模式的路径
+        release.setRoot('build-types/release')//指定release模式的路径
+    }
+}
+
+repositories {
+    google()
+}
