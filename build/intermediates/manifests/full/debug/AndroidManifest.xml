@@ -23,7 +23,6 @@
         android:debuggable="true"
         android:icon="@drawable/logo2"
         android:label="@string/app_name"
-        android:testOnly="true"
         android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         <activity
             android:name="com.hekang.hkcxn.activity.TimeData"
